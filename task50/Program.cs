@@ -53,11 +53,13 @@ Console.WriteLine ("Введите начальное число диапазо�
 int startNumber = Convert.ToInt32 (Console.ReadLine ());
 Console.WriteLine ("Введите конечное число диапазона случайно генерируемых в массив чисел: ");
 int endNumber = Convert.ToInt32 (Console.ReadLine ());
+Console.WriteLine ();
 int [,] array = CreateNewArray (m, n, startNumber, endNumber);
 ShowArray (array);
 Console.WriteLine ("Введите первый индекс (номер строки) числа, которое вы хотите найти в массиве: ");
 int userIndex1 = Convert.ToInt32 (Console.ReadLine ());
 Console.WriteLine ("Введите второй индекс (номер столбца) числа, которое вы хотите найти в массиве: ");
 int userIndex2 = Convert.ToInt32 (Console.ReadLine ());
+Console.WriteLine ();
 Console.WriteLine ("-------------------");
 FindElement (array, userIndex1, userIndex2);
